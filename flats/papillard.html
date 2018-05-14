@@ -6,19 +6,19 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
-    <title>Le Wagon - Middleman - About</title>
-    <link href="stylesheets/application-177f02c5.css" rel="stylesheet" />
-    <script src="javascripts/application-93de88c9.js"></script>
-    <link href="images/favicon-f15af148.png" rel="icon" type="image/png" />
+    <title>Le Wagon - flat list</title>
+    <link href="../stylesheets/application-177f02c5.css" rel="stylesheet" />
+    <script src="../javascripts/application-93de88c9.js"></script>
+    <link href="../images/favicon-f15af148.png" rel="icon" type="image/png" />
   </head>
   <body>
     <div class="navbar-wagon">
   <!-- Logo -->
 <!--   <a href="/" class="navbar-wagon-brand">
-    <img src="images/logo-acc9c0ec.png" alt="logo">
+    <img src="images/logo.png" alt="logo">
   </a> -->
 
-<a href="/" class="navbar-wagon-brand">    <img src="images/logo-acc9c0ec.png" alt="Logo" />
+<a href="/" class="navbar-wagon-brand">    <img src="../images/logo-acc9c0ec.png" alt="Logo" />
 </a>
   <!-- Right Navigation -->
   <div class="navbar-wagon-right hidden-xs hidden-sm">
@@ -60,41 +60,53 @@
   </div>
 </div>
    <!-- inject layouts/_navbar.html.erb -->
-    <div id="about">
-  <div class="about-content">
-    <h1>This template was built with <i class="fa fa-heart"></i> by</h1>
-    <ul class="list-inline">
-        <li>
-<a href="https://kitt.lewagon.com/alumni/ssaunier" target="_blank">            <img src="https://kitt.lewagon.com/placeholder/users/ssaunier" class="img-circle" alt="Ssaunier" />
-</a>          <h2>Sébastien Saunier</h2>
-          <p>
-<a href="https://github.com/ssaunier" target="_blank">              <i class="fa fa-github"></i> ssaunier
-</a>          </p>
-        </li>
-        <li>
-<a href="https://kitt.lewagon.com/alumni/Papillard" target="_blank">            <img src="https://kitt.lewagon.com/placeholder/users/Papillard" class="img-circle" alt="Papillard" />
-</a>          <h2>Boris Paillard</h2>
-          <p>
-<a href="https://github.com/Papillard" target="_blank">              <i class="fa fa-github"></i> Papillard
-</a>          </p>
-        </li>
-        <li>
-<a href="https://kitt.lewagon.com/alumni/TomaLeleux" target="_blank">            <img src="https://kitt.lewagon.com/placeholder/users/TomaLeleux" class="img-circle" alt="Tomaleleux" />
-</a>          <h2>Thomas Leleux</h2>
-          <p>
-<a href="https://github.com/TomaLeleux" target="_blank">              <i class="fa fa-github"></i> TomaLeleux
-</a>          </p>
-        </li>
-        <li>
-<a href="https://kitt.lewagon.com/alumni/sandradc" target="_blank">            <img src="https://kitt.lewagon.com/placeholder/users/sandradc" class="img-circle" alt="Sandradc" />
-</a>          <h2>Sandra DeCastro</h2>
-          <p>
-<a href="https://github.com/sandradc" target="_blank">              <i class="fa fa-github"></i> sandradc
-</a>          </p>
-        </li>
-    </ul>
+    <!-- source/flats/show.html.erb -->
+
+
+<!-- Access data.flats with owner's name as key -->
+
+<!-- banner definition -->
+<div class="banner-city" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.3) 50%), url('https://kitt.lewagon.com/placeholder/cities/tokyo'); ">
+</div>
+
+<div class=container>
+  <div class= "row">
+    <div class="col-xs-12 col-sm-6 col-md-4">
+      <div class="header-flat-owner" text-center>
+        <img src="https://kitt.lewagon.com/placeholder/users/papillard" class="img-circle" id="avatar" alt="Papillard" />
+        <p>Boris' home</p>
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-6 col-md-4">
+      <h1>Small flat in Tokyo</h1>
+      <p>Tokyo, Japan</p>
+      <p class="rating">
+            <i class="fa fa-star" style="color: #ffb400"></i>
+            <i class="fa fa-star" style="color: #ffb400"></i>
+            <i class="fa fa-star" style="color: #ffb400"></i>
+      </p>
+    </div>
+
+    <div class="col-xs-12 col-sm-6 col-md-4">
+      <div class= "header-flat">
+        <div class="header-flat-details">
+          </div>
+            <h4>Book this flat</h4>
+            <div class="form-group">
+              <input type="text" class="form-control"  placeholder="Checkin">
+              <input type="text" class="form-control"  placeholder="Checkout">
+            </div>
+            <button type="submit" class="btn btn-danger mb-2">Book it</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
+<!-- Inject flat data in template -->
+
+
 
     <div class="footer">
   <div class="footer-links">
