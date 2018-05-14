@@ -1,0 +1,6 @@
+- name: 'Rio'
+  url: 'rio'
+- name: 'Paris'
+  url: 'paris'
+- name: 'Shangai'
+  url: 'shangai'
