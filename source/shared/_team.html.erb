@@ -1,6 +1,6 @@
 
 
-<div class= "container" id="team">
+<!-- <div class= "container" id="team">
   <div class= "row">
     <% data.users.each do |gh_username| %>
       <ul class= "list-inline text-center">
@@ -13,7 +13,20 @@
       </ul>
     <% end %>
   </div>
+</div> -->
+
+<!-- with flewbox -->
+<div id="team">
+  <div>
+    <h1>This template was built with <i class="fa fa-heart"></i> by</h1>
+    <ul class= "list-inline text-center">
+      <% data.users.each do |gh_username| %>
+          <li>
+            <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{gh_username.github_nickname}", class: "img-circle"  %>
+            <h1><%= gh_username.name.capitalize %></h1>
+          </li>
+      <% end %>
+    </ul>
+  </div>
 </div>
-
-
 
